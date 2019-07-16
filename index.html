@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Greg Merrill | Web Developer</title>
+  <script src="https://kit.fontawesome.com/e63fc7cc5e.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <style type="text/css">
+  	* {
+		margin: 0;
+		padding: 0;
+	}
+	body {
+		text-align: center;
+	/*   Background pattern from Toptal Subtle Patterns */
+		background-image: url("https://i.imgur.com/VVYNVNw.png");
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center;
+		font-family: "Lato", sans-serif;
+		line-height: 1.5;
+	}
+	a {
+		text-decoration: none;
+		color: inherit;
+	}
+	section {
+		margin-left: 120px;
+	}
+	h1 {
+		color: #fff;
+		padding: 20px 0 0;
+	}
+	.sidebar {
+		display: block;
+		height: 100%;
+		width: 120px;
+		background-color: rgba(36,36,36,.5);
+		color: #fff;
+		position: fixed!important;
+		float: left;
+		overflow: auto;
+	}
+	.navBlankSpace {
+		width: 100%;
+		height: 150px;
+	}
+	.navPortrait {
+	 	margin: 40px auto 0;
+		border: solid rgba(255,255,255,.75);
+		border-width: 3px;
+		border-radius: 50%;
+		width: 50%;
+		opacity: 0;
+		/*animation: fadeIn 2s; */
+		/*animation: fadeOut 1s; */
+	}
+	.navLinks {
+		display: block;
+		width: 100%;
+		background-color: rgba(36,36,36,0);
+		padding: 24px 0px 16px;
+	}
+	.navLinks:hover {
+		background-color: rgba(0,0,0,.5);
+		animation:iconFade 3s infinite;
+	}
+	.roundEdge {
+		border-radius: 5px;
+	}
+	i {
+		margin: 0px 0 20px;
+	}
+	.portraitPageSpacing {
+		margin: 0 0 20px;
+	}
+	.portraitWrapper {
+		padding: 20px 0 0;
+		position: relative;
+	/*   animation: profileIn 2s ease-out; */
+	}
+	.portrait {
+		border: rgba(255,255,255,.75);
+		border-style: solid;
+		border-width: 3px;
+		border-radius: 50%;
+	}
+	.introTextWrapper {
+		margin: 0 auto 30px;
+		background: rgba(255,255,255,.75);
+		padding: 10px;
+		max-width: 300px;
+	}
+	.introText {
+		font-size: 22px;
+		color: #34495e;
+	}
+	.emailInputLine {
+		border: 0;
+		padding: 10px;
+		font-size: 18px;
+		margin: 0 10px;
+	}
+	.emailInput {
+		background: rgba(255, 255, 255, 0.75);
+		width: 200px;
+		color: #34495e;;
+	}
+	.submitButton {
+		background: rgba(231, 76, 60, 0.9);
+		color: #ecf0f1;
+	}
+	.firstSpacer {
+		height: 800px;
+	}
+	.secondSpacer {
+		height: 800px;
+	}
+	.thirdSpacer {
+		height: 800px;
+	}
+	@keyframes fadeIn{
+		0%{opacity:0}
+		100%{opacity:1}
+	}
+	@keyframes fadeOut{
+		0%{opacity:1}
+		100%{opacity:0}
+	}
+	@keyframes iconFade{
+		0%{opacity:.5} 
+		50%{opacity:1} 
+		100%{opacity:.5}
+	}
+	@keyframes profileIn {
+		from {right: 50%; opacity:0}
+		to {right: 0%;opacity: 1}
+	}
+  </style>
+</head>
+<body>
+	<nav class="sidebar">
+		<div class="navBlankSpace">
+			<img class="navPortrait" src="https://i.imgur.com/3Xe3XJ6.jpg?1">
+		</div>
+		<a class="navLinks roundEdge" href="#">
+			<i class="fas fa-home fa-2x navContent"></i>
+			<p class="navContent">Home</p>
+		</a>
+		<a class="navLinks roundEdge" href="#my-work">
+			<i class="fas fa-laptop-code fa-2x"></i>
+			<p>My Work</p>
+		</a>
+		<a class="navLinks roundEdge" href="#coding-resources">
+			<i class="fas fa-file-code fa-2x"></i>
+			<p>Coding Resources</p>
+		</a>
+	</nav>
+	<section class="homeSection">
+		<div class="portraitWrapper portraitPageSpacing">
+			<img class="portrait" src="https://i.imgur.com/3Xe3XJ6.jpg?1">
+		</div>
+		<div class="introTextWrapper portraitPageSpacing roundEdge">
+			<p class="introText">Hi! I'm Greg, an aspiring web developer. Say hello!</p>
+		</div>
+		<div class="portraitPageSpacing">
+			<input class="emailInput emailInputLine roundEdge" type="email" placeholder="Your email">
+			<input class="submitButton emailInputLine roundEdge" type="submit">
+		</div>
+		<div class="firstSpacer">
+		</div>
+	</section>
+	<section class="workSection" id="my-work">
+		<h1>My Work</h1>
+		<div class="secondSpacer">
+		</div>
+	</section>
+	<section class="resourcesSection" id="coding-resources">
+		<h1>Coding Resources</h1>
+		<div class="thirdSpacer">
+		</div>
+	</section>
+</body>
+</html>
